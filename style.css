@@ -1,0 +1,132 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: system-ui;
+}
+
+.container {
+    background-image: linear-gradient(to bottom right, blue, black);   
+    border: 7px ridge #BBB;
+    border-radius: 7px;
+    color: #FFF;
+    padding: 7%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.character-card {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.character-img {
+    width: 175px;
+    width: 50%;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+h2,
+p,
+li {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+.stat-num {
+    padding-left: 1rem;
+}
+
+p {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+.text-highlight {
+    color: #00CED1;
+    font-size: 1.5rem;
+}
+
+.char-lvl,
+.char-hp,
+.char-mp {
+    margin: 0;
+}
+
+.char-hp-bar,
+.char-mp-bar {
+    height: 3px;
+    width: 14em;
+    width: 83%;
+    padding-right: 1rem;
+    align-self: flex-end;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.char-hp-bar {background-image: linear-gradient(to bottom right, blue, #FFF);}
+.char-mp-bar {background-image: linear-gradient(to bottom right, green, #FFF);}
+
+.char-next-level-bar,
+.char-limit-level-bar {
+    background-color: #555;
+    border: 7px ridge #BBB;
+    height: 1.8rem;
+    margin-left: 1rem;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.inside-bar {
+    color: pink;
+    box-shadow: inset 0 0 10px #000;
+}
+
+.bar-fill {
+    color: deeppink;
+    width: 30%;
+    background-color: pink;
+    background-image: linear-gradient(deepPink, lightPink, hotPink);
+    box-shadow: inset 0 0 10px deepPink;
+}
+
+.menu__list {
+    font-size: 1.3rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-img {
+    width: 35%;
+    padding-bottom: 1rem;
+}
+
+.menu-item + .menu-item {
+    padding: .2rem 0;
+}
+
+.time, .gil {
+    margin: 0;
+}
+
+.location-name {
+    margin: 0;
+}
